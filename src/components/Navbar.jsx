@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
@@ -6,11 +7,17 @@ import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [activeTab, setActiveTab] = useState('register');
+
+  const [activeTab, setActiveTab] = useState('');
 
   useEffect(() => {
-    if (pathname === '/signin') setActiveTab('signin');
-    else if (pathname === '/register') setActiveTab('register');
+    if (pathname === '/signin') {
+      setActiveTab('signin');
+    } else if (pathname === '/register') {
+      setActiveTab('register');
+    } else {
+      setActiveTab('');
+    }
   }, [pathname]);
 
   return (
@@ -43,19 +50,19 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Action Buttons: Ultra-Smooth Sliding Background */}
-          <div className="relative flex items-center bg-gray-100 dark:bg-zinc-900 h-11 w-44 sm:w-52 rounded-full p-1 overflow-hidden">
+          <div className="relative flex items-center h-11 w-44 sm:w-52 rounded-full p-1 overflow-hidden bg-gray-50 dark:bg-zinc-900/50">
             
-            {/* The Background Slider (স্লাইডিং অ্যাম্বার লেয়ার) */}
-            <div 
-              className={`absolute h-[82%] rounded-full bg-amber-500 shadow-md shadow-amber-500/30 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
-              ${activeTab === 'signin' ? 'left-1 w-[46%]' : 'left-[52%] w-[46%]'}`}
-            />
+            {/* Sliding Background Layer */}
+            {activeTab && (
+              <div 
+                className={`absolute h-[82%] rounded-full bg-amber-500 shadow-md shadow-amber-500/30 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
+                ${activeTab === 'signin' ? 'left-1 w-[46%]' : 'left-[52%] w-[46%]'}`}
+              />
+            )}
 
             {/* Sign In Link */}
             <Link 
               href="/signin" 
-              onClick={() => setActiveTab('signin')}
               className={`relative z-10 flex-1 text-center text-sm font-bold transition-all duration-300
               ${activeTab === 'signin' ? 'text-white' : 'text-gray-500 dark:text-gray-400 hover:text-amber-600'}`}
             >
@@ -65,7 +72,6 @@ export default function Navbar() {
             {/* Register Link */}
             <Link 
               href="/register" 
-              onClick={() => setActiveTab('register')}
               className={`relative z-10 flex-1 text-center text-sm font-bold transition-all duration-300
               ${activeTab === 'register' ? 'text-white' : 'text-gray-500 dark:text-gray-400 hover:text-amber-600'}`}
             >

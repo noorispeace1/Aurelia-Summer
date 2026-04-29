@@ -8,7 +8,7 @@
     "stock": 15,
     "category": "Classic",
     "description": "Timeless aviator design with premium gold-toned frames and polarized lenses.",
-    "image_url": "https://images.unsplash.com/photo-1511499767350-a1590fdb7ca7?q=80&w=800&auto=format&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "stock": 20,
     "category": "Casual",
     "description": "Modern wayfarer style with matte black finish, offering full UV400 protection.",
-    "image_url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800&auto=format&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1511499767350-a1590fdb7ca7?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "stock": 12,
     "category": "Fashion",
     "description": "Elegant cat-eye sunglasses with a vintage rose-gold tint for a sophisticated look.",
-    "image_url": "https://www.vecteezy.com/free-photos/sunglasses"
+    "image_url": "https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "stock": 8,
     "category": "Sport",
     "description": "High-performance wrap-around sunglasses designed for water sports and outdoor activities.",
-    "image_url": "https://images.unsplash.com/photo-1625591339762-430970bb1adc?q=80&w=800&auto=format&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1509198500298-3bf1df693c7f?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "stock": 25,
     "category": "Retro",
     "description": "Minimalist round frames with midnight black lenses, perfect for the minimalist aesthetic.",
-    "image_url": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=800&auto=format&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800&auto=format&fit=crop"
   },
   {
     "id": 6,
@@ -63,6 +63,6 @@
     "stock": 5,
     "category": "Premium",
     "description": "Bold futuristic shield design with iridescent lenses, making a statement everywhere you go.",
-    "image_url": "https://images.unsplash.com/photo-1508296695146-257a814070b4?q=80&w=800&auto=format&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1625591339762-430970bb1adc?q=80&w=800&auto=format&fit=crop"
   }
 ]

@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="bg-white dark:bg-zinc-950 border-t border-gray-100 dark:border-zinc-900 mt-20">
       
       {/* 1. Value Proposition Bar - Width Maintained */}
-      <div className="border-b border-gray-100 dark:border-zinc-900 bg-amber-50/50 dark:bg-amber-950/10">
+      <div className="border-b max-w-[1400px] mx-auto border-gray-100 dark:border-zinc-900 bg-amber-50/50 dark:bg-amber-950/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 py-10">
             {/* Delivery Info */}

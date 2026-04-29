@@ -55,7 +55,7 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    {/* --- Right Column: Image & Social Proof --- */}
+                  
                     <div className="md:col-span-6 lg:col-span-6 relative flex justify-center items-center mt-12 md:mt-0 order-1 md:order-2">
                         
                         <div className="relative group p-3 bg-gray-50/50 dark:bg-zinc-900/50 rounded-[2.5rem] border border-gray-100 dark:border-zinc-800 shadow-inner overflow-hidden max-w-[480px] w-full">

@@ -1,30 +1,33 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Products = async () => {
-  // ১. ডাটা ফেচ করা
+
   const res = await fetch('https://aurelia-summer.vercel.app/data.json');
   const products = await res.json();
   
-  // ৪টি কার্ড দেখানোর জন্য প্রথম ৪টি ডাটা স্লাইস করা
+
   const displayedProducts = products.slice(0, 4);
 
   return (
     <div className="max-w-6xl mx-auto p-6">
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
-        Premium Collection
+        Premium Collection with
       </h1>
 
-      {/* ২. গ্রিড লেআউট (৪টি কার্ডের জন্য) */}
+   
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {displayedProducts.map((product) => (
           <div 
             key={product.id} 
             className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-gray-100"
           >
-            {/* প্রোডাক্ট ইমেজ */}
+
             <div className="h-48 overflow-hidden">
-              <img 
-                src={product.image} 
+              <Image
+                src={product.image_url} 
+                width={512}
+                height={512}
                 alt={product.name} 
                 className="w-full h-full object-cover"
               />

@@ -7,7 +7,7 @@ const Products = async () => {
   const products = await res.json();
 
   // Slicing to get only the first 4 products
-  const productsCard = products.slice(0, 4);
+  const productsCard = products.slice(0, 3);
 
   return (
     <div className="container mx-auto px-4 py-10">

@@ -91,24 +91,7 @@ const Banner = () => {
             </div>
 
             {/* --- Economic Advantage 3: Value Proposition Bar --- */}
-            <div className="w-full bg-gray-50/50 dark:bg-zinc-900/30 border-y border-gray-100 dark:border-zinc-800/50 py-6 mt-12">
-                <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
-                    {[
-                        { icon: <FaShippingFast />, label: "Express Delivery", sub: "Free over $150" },
-                        { icon: <FaGlobeAmericas />, label: "Eco-Conscious", sub: "Sustainable Materials" },
-                        { icon: <FaAward />, label: "Direct-to-Consumer", sub: "No middleman markup" },
-                        { icon: <FaStar />, label: "Buy Now, Pay Later", sub: "0% Interest Options" }
-                    ].map((item, idx) => (
-                        <div key={idx} className="flex items-center gap-3">
-                            <div className="text-amber-500 text-xl">{item.icon}</div>
-                            <div>
-                                <p className="text-xs font-bold text-gray-950 dark:text-white uppercase tracking-tight">{item.label}</p>
-                                <p className="text-[10px] text-gray-500 dark:text-gray-400">{item.sub}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            
         </section>
     );
 };

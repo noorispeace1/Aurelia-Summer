@@ -23,6 +23,7 @@ export default function Navbar() {
     } else {
       setActiveTab('');
     }
+    
   }, [pathname]);
 
   const handleSignOut = async () => {
